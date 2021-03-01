@@ -12,20 +12,20 @@ _TODO: Fill out the information below._
 
 The following machines were identified on the network:
 - Kali
-  - **Operating System**:
-  - **Purpose**:
+  - **Operating System**: Linux
+  - **Purpose**:Attacking Machine
   - **IP Address**:192.168.1.90
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
+- ELK
+  - **Operating System**: Linux
+  - **Purpose**: ELK Stack
   - **IP Address**:192.168.1.100
-- Name of VM 3
-  - **Operating System**:
-  - **Purpose**:
+- Capstone
+  - **Operating System**: Linux
+  - **Purpose**: Running ELkstack
   - **IP Address**:192.168.1.105
 - Target 1
-  - **Operating System**:
-  - **Purpose**:
+  - **Operating System**:Linux
+  - **Purpose**: Target for Red Team
   - **IP Address**:192.168.1.110
 ### Description of Targets
 _TODO: Answer the questions below._
@@ -49,7 +49,7 @@ HTTP Request Size Monitor is implemented as follows:
 Excessive HTTP Errors is implemented as follows:
   - **Metric**: HTTP Errors
   - **Threshold**: When count over all documents is above 1000 for the last 5 miuntes
-  - **Vulnerability Mitigated**: ddirb vulnerability or accessing unauthorized pages
+  - **Vulnerability Mitigated**: dirb vulnerability or accessing unauthorized pages
   - **Reliability**: low.
 
 #### CPU Usage Monitor
