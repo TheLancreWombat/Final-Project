@@ -6,27 +6,29 @@
 - Exploitation
 
 ### Exposed Services
-_TODO: Fill out the information below._
 
 Nmap scan results for each machine reveal the below services and OS details:
 
 ```bash
-$ nmap ... # TODO: Add command to Scan Target 1
+$ nmap -sV -A 192.168.1.110
 
 ```
 
 This scan identifies the services below as potential points of entry:
 - Target 1
-  - List of
-  - Exposed Services
-
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
+  22/tcp OpenSSH 6.7p1
+  80/tcp Apache httpd 2.4.10
+  111/tcp rpcbind
+  139/tcp Samba smbd 3.X-4.X
+  445/tcp Samba smbd 4.2.14-Debian
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  - List of
-  - Critical
-  - Vulnerabilities
+  - CVE-2015-5600
+  - EBD-ID:40888
+  - EBD-ID:41173
+  - CWE-200
+  - CWE-521
 
 _TODO: Include vulnerability scan results to prove the identified vulnerabilities._
 
@@ -41,6 +43,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
         - Went to target1 website 192.168.1.110 and browserd source code of each page there
         - Ctrl+U to view source code
         - Ctrl+F 'flag'
+  
   - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a36e581c
     ### CWE-521
       - CWE-521 Weak Password Requirements
